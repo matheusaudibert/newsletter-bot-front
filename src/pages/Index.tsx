@@ -26,27 +26,30 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center p-8">
-      <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+    <div className="min-h-screen bg-white flex flex-col items-center justify-center p-8">
+      <div className="max-w-4xl w-full space-y-12">
         
         {/* Seção Principal */}
-        <div className="lg:col-span-2 space-y-6">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="p-3 bg-gray-100 rounded-full">
-              <Bot className="w-8 h-8 text-gray-700" />
-            </div>
-            <div>
-              <h1 className="text-3xl font-bold text-gray-900">Newsletter Bot</h1>
-              <p className="text-gray-600">Notícias de tecnologia no Discord</p>
-            </div>
+        <div className="text-center space-y-6">
+          <div className="flex justify-center mb-8">
+            <img 
+              src="/lovable-uploads/96ad1187-af3f-4ac9-88d2-aed308d0ddc3.png" 
+              alt="Newsletter Bot" 
+              className="w-32 h-32 rounded-full"
+            />
           </div>
           
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <div>
+            <h1 className="text-4xl font-bold text-gray-900 mb-2">Newsletter Bot</h1>
+            <p className="text-xl text-gray-600">Notícias de tecnologia no Discord</p>
+          </div>
+          
+          <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
             Receba as melhores notícias de tecnologia diretamente no seu servidor Discord, 
             baseadas na newsletter do <strong>Filipe Deschamps</strong>.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
               className="bg-gray-900 text-white hover:bg-gray-800"
@@ -67,35 +70,33 @@ const Index = () => {
               <ExternalLink className="w-4 h-4 ml-2" />
             </Button>
           </div>
-          
-          <div className="text-sm text-gray-500">
-            Baseado na newsletter de <strong>105.111 leitores</strong> do Filipe Deschamps
-          </div>
         </div>
         
         {/* Seção de Comandos */}
-        <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">Comandos</h2>
+        <div className="space-y-6">
+          <h2 className="text-2xl font-semibold text-gray-900 text-center">Comandos</h2>
           
-          {commands.map((cmd, index) => (
-            <Card key={index} className="border border-gray-200 shadow-sm">
-              <CardContent className="p-4">
-                <div className="flex items-center gap-3">
-                  <div className="p-2 bg-gray-50 rounded-lg">
-                    <cmd.icon className="w-4 h-4 text-gray-600" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {commands.map((cmd, index) => (
+              <Card key={index} className="border border-gray-200 shadow-sm text-center">
+                <CardContent className="p-6">
+                  <div className="flex flex-col items-center space-y-4">
+                    <div className="p-3 bg-gray-50 rounded-lg">
+                      <cmd.icon className="w-6 h-6 text-gray-600" />
+                    </div>
+                    <div>
+                      <code className="text-sm font-mono bg-gray-100 px-3 py-2 rounded text-gray-800 block mb-2">
+                        {cmd.command}
+                      </code>
+                      <p className="text-sm text-gray-600">{cmd.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <code className="text-sm font-mono bg-gray-100 px-2 py-1 rounded text-gray-800">
-                      {cmd.command}
-                    </code>
-                    <p className="text-xs text-gray-600 mt-1">{cmd.description}</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
           
-          <div className="text-xs text-gray-500 mt-4">
+          <div className="text-center text-sm text-gray-500">
             💡 Use slash commands (/) no Discord
           </div>
         </div>
