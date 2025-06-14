@@ -1,43 +1,25 @@
-import { Bot, ExternalLink, Github, Hash, Users, Settings } from "lucide-react";
+
+import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 
 const Index = () => {
   const inviteLink = "https://discord.com/oauth2/authorize?client_id=1383234818388791296&permissions=8&integration_type=0&scope=bot";
-  
-  const commands = [
-    {
-      icon: Hash,
-      command: "/canal",
-      description: "Configura o canal para notícias"
-    },
-    {
-      icon: Users,
-      command: "/cargo",
-      description: "Define o cargo a ser mencionado"
-    },
-    {
-      icon: Settings,
-      command: "/menu",
-      description: "Exibe as configurações do bot"
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center p-8">
-      <div className="max-w-5xl w-full space-y-12">
+      <div className="max-w-3xl w-full space-y-8 text-center">
         
-        {/* Seção Principal */}
-        <div className="text-center space-y-6">
-          <div className="flex justify-center mb-8">
-            <img 
-              src="/lovable-uploads/96ad1187-af3f-4ac9-88d2-aed308d0ddc3.png" 
-              alt="Newsletter Bot" 
-              className="w-32 h-32 rounded-full"
-            />
-          </div>
-          
+        {/* Bot Image */}
+        <div className="flex justify-center mb-8">
+          <img 
+            src="/lovable-uploads/96ad1187-af3f-4ac9-88d2-aed308d0ddc3.png" 
+            alt="Newsletter Bot" 
+            className="w-32 h-32 rounded-full"
+          />
+        </div>
+        
+        {/* Main Content */}
+        <div className="space-y-6">
           <div>
             <h1 className="text-4xl font-bold mb-2" style={{ color: '#333333' }}>Newsletter Bot</h1>
             <p className="text-xl" style={{ color: '#333333' }}>Notícias de tecnologia no Discord</p>
@@ -93,38 +75,6 @@ const Index = () => {
               Ver API
               <ExternalLink className="w-4 h-4 ml-2" />
             </Button>
-          </div>
-        </div>
-        
-        {/* Seção de Comandos */}
-        <div className="space-y-6">
-          <h2 className="text-2xl font-semibold text-center" style={{ color: '#333333' }}>Comandos</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {commands.map((cmd, index) => (
-              <Card 
-                key={index} 
-                className="border border-gray-200 shadow-sm text-center hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer"
-              >
-                <CardContent className="p-6">
-                  <div className="flex flex-col items-center space-y-4">
-                    <div className="p-3 bg-gray-50 rounded-lg transition-colors duration-200 group-hover:bg-gray-100">
-                      <cmd.icon className="w-6 h-6" style={{ color: '#333333' }} />
-                    </div>
-                    <div>
-                      <code className="text-sm font-mono bg-gray-100 px-3 py-2 rounded block mb-2" style={{ color: '#333333' }}>
-                        {cmd.command}
-                      </code>
-                      <p className="text-sm" style={{ color: '#333333' }}>{cmd.description}</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          
-          <div className="text-center text-sm" style={{ color: '#333333' }}>
-            💡 Use slash commands (/) no Discord
           </div>
         </div>
         
