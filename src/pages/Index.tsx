@@ -9,18 +9,18 @@ const Index = () => {
   const commands = [
     {
       icon: Hash,
-      command: "/config canal",
+      command: "/canal",
       description: "Configura o canal para notícias"
     },
     {
       icon: Users,
-      command: "/config cargo",
+      command: "/cargo",
       description: "Define o cargo a ser mencionado"
     },
     {
       icon: Settings,
-      command: "/config menu",
-      description: "Exibe configurações do bot"
+      command: "/menu",
+      description: "Exibe as configurações do bot"
     }
   ];
 
