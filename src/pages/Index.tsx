@@ -1,4 +1,3 @@
-
 import { Bot, ExternalLink, Github, Hash, Users, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -27,7 +26,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center p-8">
-      <div className="max-w-4xl w-full space-y-12">
+      <div className="max-w-5xl w-full space-y-12">
         
         {/* Seção Principal */}
         <div className="text-center space-y-6">
@@ -46,7 +45,27 @@ const Index = () => {
           
           <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: '#333333' }}>
             Receba as melhores notícias de tecnologia diretamente no seu servidor Discord, 
-            baseadas na newsletter do <strong>Filipe Deschamps</strong>.
+            baseadas na{' '}
+            <a 
+              href="https://filipedeschamps.com.br/newsletter" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="underline hover:opacity-70 transition-opacity"
+              style={{ color: '#333333' }}
+            >
+              newsletter
+            </a>
+            {' '}do{' '}
+            <a 
+              href="https://www.youtube.com/FilipeDeschamps" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="font-semibold hover:opacity-70 transition-opacity"
+              style={{ color: '#333333' }}
+            >
+              Filipe Deschamps
+            </a>
+            .
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
