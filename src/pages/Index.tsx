@@ -69,9 +69,9 @@ const Index = () => {
               size="lg"
               className="hover:bg-gray-50 transition-colors"
               style={{ borderColor: '#333333', color: '#333333' }}
-              onClick={() => window.open('https://github.com/matheusaudibert/newsletter-api', '_blank')}
+              onClick={() => window.open('https://newsletter.audibert.dev', '_blank')}
             >
-              <Github className="w-4 h-4 mr-2" />
+              <Code className="w-4 h-4 mr-2" />
               Ver API
               <ExternalLink className="w-4 h-4 ml-2" />
             </Button>
