@@ -68,7 +68,7 @@ const Index = () => {
               size="lg"
               className="hover:bg-gray-50 transition-colors"
               style={{ borderColor: '#333333', color: '#333333' }}
-              onClick={() => window.open('https://newsletter.audibert.dev', '_blank')}
+              onClick={() => window.open('https://www.tabnews.com.br/GabrielSozinho/documentacao-da-api-do-tabnews', '_blank')}
             >
               <Code className="w-4 h-4 mr-2" />
               Ver API
