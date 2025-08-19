@@ -56,7 +56,7 @@ const Footer = () => {
                 variant="ghost" 
                 size="sm"
                 className="text-gray-400 hover:text-white"
-                onClick={() => window.open('https://github.com/matheusaudibert/newsletter-api', '_blank')}
+                onClick={() => window.open('https://www.tabnews.com.br/GabrielSozinho/documentacao-da-api-do-tabnews', '_blank')}
               >
                 <Github className="w-4 h-4 mr-1" />
                 API Source
