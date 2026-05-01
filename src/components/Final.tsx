@@ -49,7 +49,7 @@ export default function Final() {
             </div>
 
             {/* Buttons */}
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <a
                 href="https://discord.com/oauth2/authorize?client_id=1383234818388791296"
                 target="_blank"
