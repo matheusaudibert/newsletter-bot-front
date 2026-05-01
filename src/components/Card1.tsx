@@ -11,19 +11,7 @@ export default function Card1() {
             De onde vêm as notícias?
           </h2>
           <p className="text-lg font-medium leading-relaxed" style={{ color: 'rgba(255,255,255,0.55)' }}>
-            As notícias são curadas a partir do{' '}
-            <strong className="text-white font-bold">TabNews</strong>
-            , uma plataforma criada pelo{' '}
-            <a
-              href="https://filipedeschamps.com.br/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-4 decoration-white/40 hover:decoration-white transition-all duration-150"
-              style={{ color: 'rgba(255,255,255,0.55)' }}
-            >
-              Filipe Deschamps
-            </a>
-            {' '}onde a comunidade compartilha e discute conteúdos sobre tecnologia, programação e o mundo dev.
+            Conteúdo confiável, direto da comunidade dev
           </p>
         </div>
 
@@ -48,10 +36,28 @@ export default function Card1() {
           {/* Right — description */}
           <div>
             <p className="text-lg font-medium leading-relaxed" style={{ color: 'rgba(255,255,255,0.55)' }}>
-              O TabNews é uma plataforma de compartilhamento e curadoria de conteúdo sobre tecnologia e programação, criada pelo Filipe Deschamps. Funciona como um agregador social onde usuários publicam conteúdos que são organizados por votos e engajamento da comunidade.
+              As notícias são curadas a partir do{' '}
+              <a
+                href="https://www.tabnews.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white underline underline-offset-4 decoration-white/40 hover:decoration-white transition-all duration-150 font-bold"
+              >
+                TabNews
+              </a>
+              , plataforma criada pelo{' '}
+              <a
+                href="https://filipedeschamps.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white underline underline-offset-4 decoration-white/40 hover:decoration-white transition-all duration-150"
+              >
+                Filipe Deschamps
+              </a>
+              {' '}onde a comunidade compartilha, discute e vota em conteúdos sobre tecnologia e programação, destacando o que realmente importa.
             </p>
             <p className="text-lg font-medium leading-relaxed mt-5" style={{ color: 'rgba(255,255,255,0.55)' }}>
-              A newsletter é um canal dentro do próprio TabNews focado na publicação de notícias de tecnologia, reunindo atualizações relevantes do ecossistema dev de forma direta e organizada.
+              A newsletter é um canal dentro do próprio TabNews focado na publicação de notícias de tecnologia, reunindo atualizações relevantes do ecossistema dev de forma direta e organizada. Ela foi apenas abstraída e adaptada para o formato do Discord, mas o conteúdo é exatamente o mesmo que você encontraria acessando a newsletter pelo site do TabNews.
             </p>
           </div>
         </div>

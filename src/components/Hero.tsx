@@ -26,7 +26,7 @@ export default function Hero() {
           <p className="text-lg leading-relaxed mb-5 font-medium" style={{ color: 'rgba(255,255,255,0.55)' }}>
             A Newsletter mantém sua comunidade sempre atualizada, enviando automaticamente
             <br />
-            as principais notícias de tecnologia direto no Discord.
+            as principais notícias de tecnologia direto no Discord
           </p>
 
           <div className="flex flex-wrap items-center gap-3">
