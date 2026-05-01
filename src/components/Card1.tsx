@@ -23,7 +23,7 @@ export default function Card1() {
             target="_blank"
             rel="noopener noreferrer"
             style={{ display: 'block', transition: 'transform 0.3s ease', transform: 'scale(1)' }}
-            onMouseEnter={e => { e.currentTarget.style.transform = 'scale(0.99)' }}
+            onMouseEnter={e => { e.currentTarget.style.transform = 'scale(0.98)' }}
             onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1)' }}
           >
             <img
