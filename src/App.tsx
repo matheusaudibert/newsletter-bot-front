@@ -1,27 +1,38 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
+import Nav from './components/Nav'
+import Hero from './components/Hero'
+import Guilds from './components/Guilds'
+import Card1 from './components/Card1'
+import Card2 from './components/Card2'
+import Final from './components/Final'
+import Footer from './components/Footer'
+import Terms from './pages/Terms'
+import Privacy from './pages/Privacy'
 
-const queryClient = new QueryClient();
+function Home() {
+  return (
+    <div style={{ backgroundColor: '#1C1D23', minHeight: '100vh' }}>
+      <Nav />
+      <Hero />
+      <Guilds />
+      <Card1 />
+      <Card2 />
+      <Final />
+      <Footer />
+    </div>
+  )
+}
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
-
-export default App;
+export default function App() {
+  return (
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}

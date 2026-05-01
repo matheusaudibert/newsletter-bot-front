@@ -1,65 +1,57 @@
+const DiscordIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 127.14 96.36"
+    className="w-5 h-5 fill-white shrink-0"
+  >
+    <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z" />
+  </svg>
+)
 
-import { Bot, ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-
-const Hero = () => {
-  const inviteLink = "https://discord.com/oauth2/authorize?client_id=1383234818388791296&permissions=8&integration_type=0&scope=bot";
-  
+export default function Hero() {
   return (
-    <section className="relative py-20 px-4 text-center bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700">
-      <div className="absolute inset-0 bg-black/10"></div>
-      <div className="relative max-w-4xl mx-auto">
-        <div className="flex justify-center mb-6">
-          <div className="p-4 bg-white/20 backdrop-blur-sm rounded-full">
-            <Bot className="w-16 h-16 text-white" />
-          </div>
-        </div>
-        
-        <Badge variant="secondary" className="mb-4 bg-white/20 text-white border-white/30">
-          Bot para Discord
-        </Badge>
-        
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-          Notícias de Tecnologia para quem
-          <span className="block text-yellow-300">não tem tempo de ler notícias.</span>
-        </h1>
-        
-        <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Receba as melhores notícias de tecnologia diretamente no seu servidor do Discord, 
-          baseadas na newsletter do <strong>Filipe Deschamps</strong>.
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            size="lg" 
-            className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg font-semibold"
-            onClick={() => window.open(inviteLink, '_blank')}
+    <section className="relative flex items-start overflow-hidden py-16">
+
+      <div className="relative z-10 w-full max-w-[1400px] mx-auto px-8 lg:px-16 grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-12 lg:gap-12 items-start">
+        {/* Left — text */}
+        <div>
+          <h1
+            className="text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight mb-3 whitespace-nowrap"
+            style={{ letterSpacing: '-0.02em' }}
           >
-            <Bot className="w-5 h-5 mr-2" />
-            Adicionar ao Discord
-            <ExternalLink className="w-4 h-4 ml-2" />
-          </Button>
-          
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-white/30 bg-white/10 text-white hover:bg-white/20 px-8 py-3"
-            onClick={() => window.open('https://github.com/matheusaudibert/newsletter-api', '_blank')}
-          >
-            Ver API no GitHub
-            <ExternalLink className="w-4 h-4 ml-2" />
-          </Button>
-        </div>
-        
-        <div className="mt-12 text-center">
-          <p className="text-blue-100 text-sm">
-            Baseado na newsletter de <strong>105.111 leitores ativos</strong> do Filipe Deschamps
+            <span style={{ color: '#5865F2' }}>Notícias</span>
+            {' '}para o seu servidor
+          </h1>
+
+          <p className="text-lg leading-relaxed mb-5 font-medium" style={{ color: 'rgba(255,255,255,0.55)' }}>
+            A Newsletter mantém sua comunidade sempre atualizada, enviando automaticamente
+            <br />
+            as principais notícias de tecnologia direto no Discord.
           </p>
+
+          <a
+            href="https://discord.com/oauth2/authorize?client_id=1383234818388791296"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl font-bold text-sm text-white"
+            style={{ backgroundColor: '#5865F2', border: '1px solid rgba(148,161,255,0.5)', transition: 'background-color 0.3s ease, transform 0.3s ease', transform: 'scale(1)' }}
+            onMouseEnter={e => { e.currentTarget.style.backgroundColor = '#4955d6'; e.currentTarget.style.transform = 'scale(0.97)' }}
+            onMouseLeave={e => { e.currentTarget.style.backgroundColor = '#5865F2'; e.currentTarget.style.transform = 'scale(1)' }}
+          >
+            <DiscordIcon />
+            Adicionar ao Discord
+          </a>
+        </div>
+
+        {/* Right — image */}
+        <div className="flex justify-center lg:justify-end">
+          <img
+            src="https://filipedeschamps.com.br/avatar-big.png"
+            alt="Filipe Deschamps"
+            className="w-64 h-64 rounded-full object-cover"
+          />
         </div>
       </div>
     </section>
-  );
-};
-
-export default Hero;
+  )
+}
