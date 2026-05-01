@@ -12,13 +12,15 @@ import Privacy from './pages/Privacy'
 
 function Home() {
   return (
-    <div style={{ backgroundColor: '#1C1D23', minHeight: '100vh' }}>
+    <div className="flex flex-col min-h-screen" style={{ backgroundColor: '#1C1D23' }}>
       <Nav />
-      <Hero />
-      <Guilds />
-      <Card1 />
-      <Card2 />
-      <Final />
+      <div className="flex-1">
+        <Hero />
+        <Guilds />
+        <Card1 />
+        <Card2 />
+        <Final />
+      </div>
       <Footer />
     </div>
   )

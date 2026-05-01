@@ -14,10 +14,10 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
 
 export default function Terms() {
   return (
-    <div style={{ backgroundColor: '#1C1D23', minHeight: '100vh' }}>
+    <div className="flex flex-col min-h-screen" style={{ backgroundColor: '#1C1D23' }}>
       <Nav />
 
-      <main className="max-w-[1400px] mx-auto px-8 lg:px-16 pt-16 pb-40">
+      <main className="flex-1 max-w-[1400px] mx-auto w-full px-8 lg:px-16 pt-16 pb-40">
         <div className="max-w-3xl">
           <h1
             className="text-4xl lg:text-5xl font-extrabold text-white mb-3"
