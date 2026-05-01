@@ -57,11 +57,20 @@ export default function Hero() {
 
         {/* Right — image */}
         <div className="flex justify-center lg:justify-end">
-          <img
-            src="https://filipedeschamps.com.br/avatar-big.png"
-            alt="Filipe Deschamps"
-            className="w-64 h-64 rounded-full object-cover"
-          />
+          <a
+            href="https://filipedeschamps.com.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'block', transition: 'transform 0.3s ease', transform: 'scale(1)' }}
+            onMouseEnter={e => { e.currentTarget.style.transform = 'scale(0.96)' }}
+            onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1)' }}
+          >
+            <img
+              src="https://filipedeschamps.com.br/avatar-big.png"
+              alt="Filipe Deschamps"
+              className="w-64 h-64 rounded-full object-cover"
+            />
+          </a>
         </div>
       </div>
     </section>
