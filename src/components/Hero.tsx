@@ -16,7 +16,7 @@ export default function Hero() {
         {/* Left — text */}
         <div>
           <h1
-            className="text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight mb-3 whitespace-nowrap"
+            className="text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight mb-3"
             style={{ letterSpacing: '-0.02em' }}
           >
             <span style={{ color: '#5865F2' }}>Notícias</span>
@@ -29,18 +29,32 @@ export default function Hero() {
             as principais notícias de tecnologia direto no Discord.
           </p>
 
-          <a
-            href="https://discord.com/oauth2/authorize?client_id=1383234818388791296"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl font-bold text-sm text-white"
-            style={{ backgroundColor: '#5865F2', border: '1px solid rgba(148,161,255,0.5)', transition: 'background-color 0.3s ease, transform 0.3s ease', transform: 'scale(1)' }}
-            onMouseEnter={e => { e.currentTarget.style.backgroundColor = '#4955d6'; e.currentTarget.style.transform = 'scale(0.97)' }}
-            onMouseLeave={e => { e.currentTarget.style.backgroundColor = '#5865F2'; e.currentTarget.style.transform = 'scale(1)' }}
-          >
-            <DiscordIcon />
-            Adicionar ao Discord
-          </a>
+          <div className="flex flex-wrap items-center gap-3">
+            <a
+              href="https://discord.com/oauth2/authorize?client_id=1383234818388791296"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl font-bold text-sm text-white"
+              style={{ backgroundColor: '#5865F2', border: '1px solid rgba(148,161,255,0.5)', transition: 'background-color 0.3s ease, transform 0.3s ease', transform: 'scale(1)' }}
+              onMouseEnter={e => { e.currentTarget.style.backgroundColor = '#4955d6'; e.currentTarget.style.transform = 'scale(0.97)' }}
+              onMouseLeave={e => { e.currentTarget.style.backgroundColor = '#5865F2'; e.currentTarget.style.transform = 'scale(1)' }}
+            >
+              <DiscordIcon />
+              Adicionar ao Discord
+            </a>
+            <a
+              href="https://discord.gg/programador"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl font-bold text-sm text-white"
+              style={{ backgroundColor: '#23252B', border: '1px solid rgba(255,255,255,0.08)', transition: 'background-color 0.15s ease, transform 0.15s ease', transform: 'scale(1)' }}
+              onMouseEnter={e => { e.currentTarget.style.backgroundColor = '#1a1b20'; e.currentTarget.style.transform = 'scale(0.96)' }}
+              onMouseLeave={e => { e.currentTarget.style.backgroundColor = '#23252B'; e.currentTarget.style.transform = 'scale(1)' }}
+            >
+              <img src="https://cdn3.emoji.gg/emojis/5922-verified-icon.png" className="w-5 h-5 object-contain shrink-0" />
+              Entrar no servidor
+            </a>
+          </div>
         </div>
 
         {/* Right — image */}

@@ -17,7 +17,7 @@ export default function Privacy() {
     <div style={{ backgroundColor: '#1C1D23', minHeight: '100vh' }}>
       <Nav />
 
-      <main className="max-w-[1400px] mx-auto px-8 lg:px-16 py-16">
+      <main className="max-w-[1400px] mx-auto px-8 lg:px-16 pt-16 pb-40">
         <div className="max-w-3xl">
           <h1
             className="text-4xl lg:text-5xl font-extrabold text-white mb-3"

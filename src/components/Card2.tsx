@@ -38,7 +38,7 @@ export default function Card2() {
           {steps.map((step, i) => (
             <div
               key={i}
-              className="flex items-center gap-6 rounded-2xl px-6 py-5"
+              className="flex items-center gap-6 rounded-2xl px-6 py-5 overflow-hidden"
               style={{ backgroundColor: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.06)' }}
             >
               <span
@@ -53,7 +53,7 @@ export default function Card2() {
               >
                 {step.command}
               </span>
-              <p className="font-medium text-base" style={{ color: 'rgba(255,255,255,0.55)' }}>
+              <p className="font-medium text-base min-w-0 flex-1" style={{ color: 'rgba(255,255,255,0.55)' }}>
                 {step.description}
               </p>
             </div>
