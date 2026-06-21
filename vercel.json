@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://newsletter.squareweb.app/:path*"
+      "destination": "https://newsletter.audibert.dev/:path*"
     },
     {
       "source": "/(.*)",

@@ -10,7 +10,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://newsletter.squareweb.app',
+        target: 'https://newsletter.audibert.dev',
         changeOrigin: true,
         rewrite: path => path.replace(/^\/api/, ''),
       },
