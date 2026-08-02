@@ -1,6 +1,6 @@
 
 # Newsletter bot front
 
-A simple front end to the [Newsletter Bot](https://github.com/matheusaudibert/newsletter-bot) project for Discord. 
+A simple front end to the [Newsletter Bot](https://github.com/matheusaudibert/newsletter-bot) project. 
 
 ![IMAGE](https://i.postimg.cc/zfkz4PHk/image-newsletter-bot-front.png)
