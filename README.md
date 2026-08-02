@@ -1,6 +1,5 @@
-
 # Newsletter bot front
 
-A simple front end to the [Newsletter Bot](https://github.com/matheusaudibert/newsletter-bot) project. 
+A simple front end to the [Newsletter Bot](https://github.com/matheusaudibert/newsletter-bot) project.
 
-![IMAGE](https://i.postimg.cc/zfkz4PHk/image-newsletter-bot-front.png)
+![IMAGE](public/preview.png)
