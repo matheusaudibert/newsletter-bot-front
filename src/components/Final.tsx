@@ -83,7 +83,7 @@ export default function Final() {
                 onMouseEnter={e => { e.currentTarget.style.backgroundColor = '#1a1b20'; e.currentTarget.style.transform = 'scale(0.96)' }}
                 onMouseLeave={e => { e.currentTarget.style.backgroundColor = '#23252B'; e.currentTarget.style.transform = 'scale(1)' }}
               >
-                <img src="https://cdn3.emoji.gg/emojis/5922-verified-icon.png" className="w-5 h-5 object-contain shrink-0" style={{ minWidth: '20px' }} />
+                <img src="https://cdn.discordapp.com/emojis/960580118827389028.png" className="w-5 h-5 object-contain shrink-0" style={{ minWidth: '20px' }} />
                 Entrar no servidor
               </a>
             </div>
